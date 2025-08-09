@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaking Corner - IELTS Journey</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">IELTS Journey</a>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="vocabulary.html">Vocabulary</a></li>
+                <li><a href="tracker.html">Tracker</a></li>
+                <li><a href="writing.html">Writing</a></li>
+                <li><a href="speaking.html" class="active">Speaking</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Speaking Corner</h1>
+        
+        <div class="card">
+            <h2>Part 1</h2>
+            <button id="part1-btn">Get Random Part 1 Topic</button>
+            <div id="part1-topic" class="card" style="margin-top: 15px; display: none;"></div>
+        </div>
+        
+        <div class="card">
+            <h2>Part 2</h2>
+            <button id="part2-btn">Get Random Part 2 Cue Card</button>
+            <div id="part2-topic" class="card" style="margin-top: 15px; display: none;"></div>
+            <div>
+                <strong>Time: <span id="speaking-timer">00:00</span></strong>
+            </div>
+            <div style="display:flex; gap: 10px; margin-top: 10px;">
+                <button id="prep-timer-btn">Start 1-min Prep</button>
+                <button id="speak-timer-btn" class="button-secondary">Start 2-min Speaking</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Part 3</h2>
+            <button id="part3-btn">Get Random Part 3 Questions</button>
+             <div id="part3-topic" class="card" style="margin-top: 15px; display: none;"></div>
+        </div>
+
+    </div>
+    <script src="js/speaking.js"></script>
+</body>
+</html>

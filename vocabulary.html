@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary - IELTS Journey</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">IELTS Journey</a>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="vocabulary.html" class="active">Vocabulary</a></li>
+                <li><a href="tracker.html">Tracker</a></li>
+                <li><a href="writing.html">Writing</a></li>
+                <li><a href="speaking.html">Speaking</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Vocabulary Notebook</h1>
+        <div class="card">
+            <h2>Add New Word</h2>
+            <form id="add-word-form">
+                <input type="text" id="word" placeholder="Word" required>
+                <input type="text" id="definition" placeholder="Definition" required>
+                <textarea id="example" placeholder="Example sentence"></textarea>
+                <input type="text" id="source" placeholder="Source (e.g., C18T1P1)">
+                <button type="submit">Add Word</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>My Word List</h2>
+            <input type="text" id="search-bar" placeholder="Search words...">
+            <div id="word-list"></div>
+        </div>
+    </div>
+
+    <script src="js/vocabulary.js"></script>
+</body>
+</html>
